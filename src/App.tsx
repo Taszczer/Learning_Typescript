@@ -1,11 +1,12 @@
-import Navbar from "./components/Navbar.tsx"
-import { BrowserRouter } from "react-router-dom"
+import Heading from "./components/Heading"
+import { Section } from "./components/Section"
 
 function App() {
     return (
-        <BrowserRouter>
-            <Navbar />
-        </BrowserRouter>
+        <>
+            <Heading title={"Hello"} />
+            <Section>This is children</Section>
+        </>
     )
 }
 
