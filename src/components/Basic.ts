@@ -13,7 +13,7 @@ const firstObject = {
 
 firstObject.prop1 = "Amogus"
 
-type randomType = {
+interface randomType0 {
     name: string
     active?: boolean
     music: (string | number)[]
