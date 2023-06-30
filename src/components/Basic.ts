@@ -29,3 +29,14 @@ let xD: randomType = {
     name: "TaszczerOK",
     music: [130, "trigger", "light"],
 }
+
+// Enum
+
+enum Grade {
+    Up = 11,
+    Down,
+    Left,
+    Right,
+}
+//mogę zmieniać wartość dla 0 objektu
+console.log(Grade.Up)
