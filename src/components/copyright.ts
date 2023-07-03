@@ -1,4 +1,4 @@
-//original Js code
+// Js code
 // const year = document.getElementById("year")
 // const thisYear = new Date().getFullYear() // new Date object that represents the current date and time. .getFullYear() is a method of the Date object that returns the year
 // year.setAttribute("datetime", thisYear) //create new attribute to an HTML element
