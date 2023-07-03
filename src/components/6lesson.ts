@@ -20,5 +20,5 @@ class Coder {
 
 const Dima = new Coder("Dima", "Phonk", 16)
 console.log(Dima.getAge())
-console.log(Dima.age)
-console.log(Dima.lang) //I have error but it's work. Error because lang is protected
+// console.log(Dima.age)
+// console.log(Dima.lang) //I have error but it's work. Error because lang is protected
