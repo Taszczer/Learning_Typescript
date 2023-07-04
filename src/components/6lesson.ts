@@ -1,5 +1,5 @@
 class Coder {
-    secondLang!: string //stay away from this XD
+    secondLang!: string //stay away from this
 
     constructor(
         public readonly name: string,
