@@ -22,3 +22,15 @@ const Dima = new Coder("Dima", "Phonk", 16)
 console.log(Dima.getAge())
 // console.log(Dima.age)
 // console.log(Dima.lang) //I have error but it's work. Error because lang is protected
+
+class WebDev extends Coder {
+    constructor(
+        public computer: string,
+        name: string,
+        music: string,
+        age: number
+    ) {
+        super(name, music, age)
+        this.computer = computer
+    }
+}
