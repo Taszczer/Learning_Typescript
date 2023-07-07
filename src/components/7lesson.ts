@@ -12,5 +12,16 @@ const todaysTr: TransactionObj = {
     Job: 50,
 }
 
+const todaysNet = (transactions: TransactionObj): number => {
+    let total = 0
+    for (const transaction in transactions) {
+        total += transactions[transaction]
+    }
+    return total
+}
+
 console.log(todaysTr.Pizza)
 console.log(todaysTr["Pizza"])
+
+let prop: string = "Pizza"
+console.log(todaysNet(todaysTr))
