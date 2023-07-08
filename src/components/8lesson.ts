@@ -49,3 +49,17 @@ const getUsersProperty = <T extends HasID, K extends keyof T>(
 ): T[K][] => {
     return users.map((user) => user[key])
 }
+
+class StateObject<T> {
+    private data: T
+
+    constructor(value: T) {
+        this.data = value
+    }
+    get state(): T {
+        return this.data
+    }
+    set state(value: T) {
+        this.data = value
+    }
+}
