@@ -63,3 +63,5 @@ class StateObject<T> {
         this.data = value
     }
 }
+const store = new StateObject("John")
+console.log(store.state)
