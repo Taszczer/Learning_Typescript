@@ -106,3 +106,5 @@ type newAssign = ReturnType<typeof createNewAssign>
 type AssignParams = Parameters<typeof createNewAssign>
 
 const assignArgs: AssignParams = ["Generics", 100]
+
+const tsAssign2: newAssign = createNewAssign(...assignArgs)
