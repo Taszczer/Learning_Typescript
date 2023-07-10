@@ -86,3 +86,23 @@ type adjustedGrade = Exclude<LetterGrdes, "U"> //deleting U in array
 type highGrade = Extract<LetterGrdes, "A" | "B"> // in array only A B
 
 //Nonnyllable
+
+type allPossibleGrades = "Dima" | "Dave" | null | undefined
+
+type namesOnly = NonNullable<allPossibleGrades>
+
+// ReturnType
+
+//type newAssign = { title: string; points: number }
+
+const createNewAssign = (title: string, points: number) => {
+    return { title, points }
+}
+
+type newAssign = ReturnType<typeof createNewAssign>
+
+// Parameters
+
+type AssignParams = Parameters<typeof createNewAssign>
+
+const assignArgs: AssignParams = ["Generics", 100]
