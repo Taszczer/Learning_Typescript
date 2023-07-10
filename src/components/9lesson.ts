@@ -62,3 +62,27 @@ const gradeData: Record<Students, Grades> = {
     Sara: { assign1: 85, assign2: 93 },
     Kelly: { assign1: 76, assign2: 33 },
 }
+
+//Pick and Omit
+// Pick we picking what we want to use from our assignment
+type AssignResult = Pick<Assignment, "studentId" | "grade">
+
+const score: AssignResult = {
+    studentId: "k123",
+    grade: 85,
+}
+
+type AssignPreview = Omit<Assignment, "grade" | "verified">
+
+const preview: AssignPreview = {
+    studentId: "k124",
+    title: "Final Project",
+}
+
+// Exclude and Extract
+
+type adjustedGrade = Exclude<LetterGrdes, "U"> //deleting U in array
+
+type highGrade = Extract<LetterGrdes, "A" | "B"> // in array only A B
+
+//Nonnyllable
